@@ -6,7 +6,7 @@
     {
       "label": "build run",
       "type": "shell",
-      "command": "open <YOUR PATH TO THE MGBA EXECUTABLE> ./Project.gba",
+      "command": "open /Users/alexlee/Desktop/GBA/mGBA.app ./src/Project.gba",
 
       "problemMatcher": [],
       "dependsOn": ["build"],
@@ -17,20 +17,21 @@
     },
     {
       "label": "build",
+
       "type": "shell",
-      "command": "docker run --rm -it -v \"${PWD}:/gba\" aaaronic/gba-compiler:1.2",
+      "command": "cd src && docker run --rm -it -v \"${PWD}:/gba\" aaaronic/gba-compiler:1.2",
       "problemMatcher": []
     },
     {
       "label": "clean",
       "type": "shell",
-      "command": "docker run --rm -it -v \"${PWD}:/gba\" aaaronic/gba-compiler:1.2 bash -c 'cd /gba && make clean'",
+      "command": "cd src && docker run --rm -it -v \"${PWD}:/gba\" aaaronic/gba-compiler:1.2 bash -c 'cd /gba && make clean'",
       "problemMatcher": []
     },
     {
       "label": "audio",
       "type": "shell",
-      "command": "docker run --rm -it -v \"${PWD}:/gba\" aaaronic/gba-compiler:1.2 bash -c 'cd /gba && make audio'",
+      "command": "cd src && docker run --rm -it -v \"${PWD}:/gba\" aaaronic/gba-compiler:1.2 bash -c 'cd /gba && make audio'",
       "problemMatcher": []
     }
   ]
