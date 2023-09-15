@@ -1,0 +1,2 @@
+void initMonster();
+void drawMonster();

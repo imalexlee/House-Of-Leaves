@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "gba.h": "c",
+    "mode0.h": "c",
+    "sprites.h": "c",
+    "print.h": "c",
+    "johnny.h": "c",
+    "*.ds_store": "c",
+    "notescreen2.h": "c"
+  }
+}

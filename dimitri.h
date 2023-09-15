@@ -1,0 +1,2 @@
+void initDimitri();
+void drawDimitri();

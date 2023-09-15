@@ -1,0 +1,2 @@
+void initJohnny();
+void drawJohnny();
